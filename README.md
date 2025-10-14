@@ -40,7 +40,7 @@
 
 ##  Installation
 
-1️ Crée un environnement virtuel et active le :
+Crée un environnement virtuel et active le :
 ```bash
 python -m venv venv
 source venv/bin/activate
