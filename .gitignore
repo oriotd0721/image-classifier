@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual envs
+venv/
+mon_env/
+.env/
+
+# Datasets volumineux
+data/cats_vs_dogs/train/
+data/cats_vs_dogs/val/
+
+# Autoriser seulement un petit échantillon si besoin
+!data/cats_vs_dogs/train/cats/
+!data/cats_vs_dogs/train/dogs/
+!data/cats_vs_dogs/val/cats/
+!data/cats_vs_dogs/val/dogs/
+
+# Modèles lourds
+models/*.pt
+models/*.pth
+
+# macOS
+.DS_Store
