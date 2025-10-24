@@ -10,7 +10,7 @@
 > _Projet personnel en Intelligence Artificielle — classification d’images avec PyTorch._
 
 
-## 🚀 Fonctionnalités principales
+## Fonctionnalités principales
 
 -  Apprentissage par transfert avec **ResNet18 (pré-entraîné sur ImageNet)**  
 -  Classification binaire : **Chats vs Chiens**  
