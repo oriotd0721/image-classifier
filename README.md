@@ -16,7 +16,6 @@
 -  Classification binaire : **Chats vs Chiens**  
 -  Scripts séparés pour l’**entraînement** et l’**inférence**  
 - Compatible **CPU / GPU / Apple MPS (Mac)**  
--  Code modulaire et clair pour un usage éducatif  
 
 
 ##  Structure du projet
