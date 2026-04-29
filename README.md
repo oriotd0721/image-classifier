@@ -57,34 +57,50 @@ pip install -r requirements.txt
 Make sure your dataset is organised as follows:
 
 data/
+
 └── cats_vs_dogs/
+
     ├── train/
+    
     │   ├── cats/
+    
     │   └── dogs/
+    
     └── val/
+    
         ├── cats/
+        
         └── dogs/
+        
 
 
 ## Run training:
 
 ```bash
 python src/train.py --data data/cats_vs_dogs --epochs 5
-The model will be saved in the models/ directory:
 ```
 
+The model will be saved in the models/ directory:
+
+```bash
 models/resnet18.pt
 models/labels.json
+```
 Inference / Prediction
 
 To test an image after training:
-
+```bash
 python src/infer.py --weights models/resnet18.pt --labels models/labels.json data/cats_vs_dogs/val/dogs/dog.4001.jpg
+```
 
 Example output:
+```bash
 Predicted: dogs (p=0.70)
+```
 Results
+```bash
 The model was trained for 3 epochs on the Cats vs Dogs dataset.
+```
 
 ## Technologies & Tools
 Language: Python
