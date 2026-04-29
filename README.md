@@ -20,12 +20,19 @@
 
 ## Project Structure
 ├── src/
+
 │   ├── train.py
+
 │   ├── infer.py
+
 ├── models/
+
 │   ├── resnet18.pt
+
 │   └── labels.json
+
 ├── requirements.txt
+
 └── README.md
 
 
