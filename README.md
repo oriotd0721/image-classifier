@@ -44,14 +44,17 @@ Create and activate a virtual environment:
 ```bash
 python -m venv venv
 source venv/bin/activate
+```
+
 Install dependencies:
 
 
+```bash
 pip install -r requirements.txt
-Training
-Make sure your dataset is organised as follows:
+```
 
-## Project Structure
+## Training
+Make sure your dataset is organised as follows:
 
 data/
 └── cats_vs_dogs/
@@ -65,21 +68,20 @@ data/
 
 ## Run training:
 
-
+```bash
 python src/train.py --data data/cats_vs_dogs --epochs 5
 The model will be saved in the models/ directory:
-
+```
 
 models/resnet18.pt
 models/labels.json
 Inference / Prediction
+
 To test an image after training:
 
-
 python src/infer.py --weights models/resnet18.pt --labels models/labels.json data/cats_vs_dogs/val/dogs/dog.4001.jpg
+
 Example output:
-
-
 Predicted: dogs (p=0.70)
 Results
 The model was trained for 3 epochs on the Cats vs Dogs dataset.
